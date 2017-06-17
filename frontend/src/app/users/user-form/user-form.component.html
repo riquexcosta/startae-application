@@ -1,0 +1,25 @@
+<div class="purple">
+  <div class="wrapper">
+    <div class="container">
+        <h1>{{ title }}</h1>
+        <form (ngSubmit)="save()">
+          <div>
+            <label for="name">Nome</label>
+            <input type="text" id="name" required [(ngModel)]="user.name" name='name'>
+          </div>
+          <div>
+            <label for="twitter">Twitter</label>
+            <input type="text" id="twitter" required [(ngModel)]="user.twitter" name='twitter'>
+          </div>
+          <div>
+            <label for="ocupation">Ocupação</label>
+            <input type="text" id="ocupation" required [(ngModel)]="user.ocupation" name='ocupation'>
+          </div>
+         
+          
+          <button type="submit">Enviar</button>
+        </form>
+        <a class="back" routerLink="/users">Voltar para usuários</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="purple">
+  <div class="wrapper">
+    
+    <div> 
+      <a class="back" routerLink="/">HOME</a>
+    </div>  
+
+      <p>
+        Mostrando {{ users.length }} usuários.
+      </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th data-field="name">Nome</th>
+          <th data-field="name">Twitter</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let u of users">
+          <td>{{ u.name }}</td>
+          <td>{{ u.twitter }}</td>
+          <td><a class="show" [routerLink]="['/users/show', u.id]"> Mostrar </a></td>
+          <td>
+            <a class="edit" [routerLink]="['/users', u.id]"> Editar </a>
+          </td>
+          <td>
+            <a class="delete" (click)="deleteUser(u)"> Deletar </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div> 
+      <a class="new" routerLink="/users/new">+ NOVO MEMBRO</a>
+    </div>  
+  </div>
+</div>

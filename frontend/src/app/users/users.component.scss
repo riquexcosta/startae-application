@@ -1,0 +1,67 @@
+.purple{
+    padding: 30px;
+    min-height: 100vh;
+}
+
+table{
+    background: white;
+    color: #6026aa;
+    thead{
+        background: #6026aa;
+        color: white;
+
+        tr th{
+            padding: 5px
+        }
+    }
+
+    tbody{
+        tr{
+            &:nth-of-type(odd){
+                background: #efefef;
+            }
+
+            td {
+                padding: 10px;
+
+                a{
+                    padding: 5px;
+                    text-decoration: none;
+
+                    &.show{
+                        background: #a2f1a2;
+                        color: #003800;
+                    }
+
+                    &.delete{
+                        background: #ff8f8f;
+                        color: #753b3b;
+                    }
+
+                    &.edit{
+                        background: #ffcd00;
+                        color: #826a0b;
+                    }
+                }
+            }
+        }
+    }
+}
+
+a.new, a.back{
+    display: block;
+    background: #a2f1a2;
+    color: #003800;
+    max-width: 300px;
+    text-align: center;
+    padding: 5px 20px;
+    text-decoration: none;
+    margin: 10px 0px;
+    font-family: "ProximaNovaBold";
+}
+
+a.back{
+    background: white;
+    color: #6026aa;
+    text-align: center;
+}

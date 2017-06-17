@@ -1,0 +1,87 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./assets/fonts/ProximaNova-Regular.otf");
+
+}
+
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("./assets/fonts/ProximaNova-Bold.otf");
+
+}
+
+@font-face {
+  font-family: "ProximaNovaLight";
+  src: url("./assets/fonts/ProximaNova-Light.otf");
+}
+
+// @font-face {
+//   font-family: "ProximaNovaLightItalic";
+//   src: url("./assets/fonts/ProximaNova-LightItalic.otf");
+// }
+
+@font-face {
+  font-family: "ProximaNovaRegularItalic";
+  src: url("./assets/fonts/ProximaNova-RegItalic.otf");
+}
+
+body{
+    
+    color: white;
+    font-family: "ProximaNova";
+    margin: 0;
+}
+
+
+.purple{
+        background: #6026aa;
+}
+
+
+
+.red{
+    background: #f91e37;
+    background: -webkit-linear-gradient(top right, #6026aa 50%, #f91e37 50%);
+    background: -moz-linear-gradient(top right, #6026aa 50%, #f91e37 50%);
+    background: -o-linear-gradient(top right, #6026aa 50%, #f91e37 50%);
+    background: linear-gradient(to bottom left, #6026aa 50%, #f91e37 50%);
+}
+.wrapper{
+    max-width: 1320px;
+    margin: 0 auto;
+    width: 95%;
+
+    .header{
+        padding: 40px 0px;
+
+       
+
+        .logotype{
+            fill: #FFF;
+            margin-left: 8px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 960px){
+    .purple.head {
+        background: #542197;
+        text-align: center;
+    }
+
+    .wrapper .header {
+
+        padding: 20px 0px;
+        .logotype{
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+

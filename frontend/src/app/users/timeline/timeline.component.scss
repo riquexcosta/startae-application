@@ -1,0 +1,247 @@
+.purple{
+    padding-top: 140px;
+
+    h1{
+        font-size: 100px;
+        font-family: "ProximaNovaBold";
+        text-align: center;
+        margin-bottom: 10px
+    }
+
+    p.ocupation{
+        font-size: 20px;
+        text-align: center;
+        font-family: "ProximaNovaLight";
+        letter-spacing: 1px;
+    }
+
+    .latest{
+        text-align: center;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-family: "ProximaNovaLight";
+    }
+}
+
+.content{
+    position: relative;
+    padding: 20px 0px;
+    min-height: 100vh;
+    &:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+.timeline{
+    width: 5px;
+    min-height: 90%;
+    background: white;
+    display: block;
+    margin: 0 auto;
+    border-radius: 30px;    
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    margin-left: -2.5px;
+}
+    
+
+.tweet{
+    background: white;
+    border-radius: 5px;
+    width: 440px;
+    color: black;
+    margin-top: 10px;
+    box-sizing: border-box;
+    float: left;
+    clear: both;
+    padding: 10px;
+    position: relative;
+    margin-left: calc(50% - 462px);
+    z-index: 99999;
+    &:after{
+        content: '';
+        display: block;
+        clear: both;
+    }
+
+    .photo{
+        float: left;
+        width: 70px;
+        padding-top: 10px;
+        img{
+            border-radius: 50px;
+        }
+        .like{
+            text-align: left;
+            font-size: 14px;
+            font-family: "ProximaNovaBold";
+            color: #9dafbb;
+            padding-top: 5px;
+
+            .icon-heart{
+                height: 17px;
+                width: 19px;
+                background: url('/assets/images/heart.jpg');
+                float: left;
+                margin-left: 10px
+            }
+
+            .number{
+                float: left;
+                height: 17px;
+                padding-top: 3px;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .text{
+        float: right;
+        width: 340px;
+
+        p{
+            font-family: "ProximaNovaRegularItalic";
+            color: #797979;
+            margin: 0;
+            &.date{
+                color: #000;
+                font-size: 13px;
+                font-family: "ProximaNovaBold";
+                margin-bottom: 5px;
+                margin-top: 10px;
+            }
+        }
+
+    }
+    &:before{
+        content: '';
+        width: 0; 
+        height: 0; 
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent; 
+        border-left:8px solid white; 
+        position: absolute;
+        right: -8px;
+        top: 50%;
+        margin-top: -4px;
+    }
+
+    .circle{
+        background: white;
+        width: 7px;
+        height: 7px; 
+        border-radius: 100px;
+        border: 5px solid #f91e37;
+        position: absolute;
+        right: -30px;
+        top: 50%;
+        margin-top: -3.5px;
+    }
+
+    &:nth-of-type(odd){
+        float: right;
+        margin-right: calc(50% - 462px);
+
+        .circle{
+            right: auto;
+            left: -30px;
+        }
+
+        &:before{
+            content: '';
+            width: 0; 
+            height: 0; 
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent; 
+            border-left: none;
+            border-right:8px solid white; 
+            position: absolute;
+            left: -8px;
+            top: 50%;
+            margin-top: -4px;
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .purple{
+        padding-top: 20px;
+        h1{
+            font-size: 2.5em;
+            text-align: left;
+            margin-bottom: 5px;
+        }
+        p.ocupation{
+            text-align: left;
+            font-size: 1.2em;
+            margin-top: 5px;
+        }
+
+        .latest{
+            text-align: left;
+        }
+
+        
+    }
+
+    .red{
+        .timeline{
+            left: 20px;
+        }
+
+        .tweet{
+            width: 85%;
+
+            .text{
+                width: 75%;
+
+                p {
+                    font-size: 13px;
+                }
+            }
+
+            .photo{
+                width: 20%;
+                text-align: center;
+                .like{
+                    text-align: center;
+
+                    .icon-heart, .number{
+                        float: none;
+                        display: inline-block;
+                    }
+                }
+            }
+            &:nth-of-type(odd){
+                float: left;
+                margin-right: 0;
+                margin-left: 40px;
+            }
+
+            &:nth-of-type(even){
+                margin-left: 40px;
+                .circle{
+                    right: auto;
+                    left: -30px;
+                }
+
+                &:before{
+                    content: '';
+                    width: 0; 
+                    height: 0; 
+                    border-top: 8px solid transparent;
+                    border-bottom: 8px solid transparent; 
+                    border-left: none;
+                    border-right:8px solid white; 
+                    position: absolute;
+                    left: -8px;
+                    top: 50%;
+                    margin-top: -4px;
+                }
+            }
+        }
+    }
+}

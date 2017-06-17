@@ -1,0 +1,36 @@
+.purple{
+    padding: 20px;
+    min-height: 100vh;
+
+    form{
+        label{
+            display: block;
+            margin-left: 5px;
+        }
+
+        input{
+            height: 40px;
+            width: 500px;
+            margin: 5px;
+            font-size: 15px;
+            color: #333;
+        }
+
+        button{
+            background: #240152;
+            color: #ffffff;
+            padding: 20px 50px;
+            text-align: center;
+            margin: 5px;
+            font-size: 20px;
+            display: block;
+            border: none;
+            font-family: "ProximaNovaBold";
+        }
+
+    }
+    a.back{
+        color: white;
+        font-family: "ProximaNovaBold";
+    }
+}
