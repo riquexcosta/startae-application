@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'assets/styles/_variables.scss';
+
+
 @font-face {
   font-family: "ProximaNova";
   src: url("./assets/fonts/ProximaNova-Regular.otf");
@@ -16,15 +19,16 @@
   src: url("./assets/fonts/ProximaNova-Light.otf");
 }
 
-// @font-face {
-//   font-family: "ProximaNovaLightItalic";
-//   src: url("./assets/fonts/ProximaNova-LightItalic.otf");
-// }
+
 
 @font-face {
   font-family: "ProximaNovaRegularItalic";
   src: url("./assets/fonts/ProximaNova-RegItalic.otf");
 }
+
+
+
+
 
 body{
     
@@ -35,17 +39,17 @@ body{
 
 
 .purple{
-        background: #6026aa;
+        background: $purple;
 }
 
 
 
 .red{
-    background: #f91e37;
-    background: -webkit-linear-gradient(top right, #6026aa 50%, #f91e37 50%);
-    background: -moz-linear-gradient(top right, #6026aa 50%, #f91e37 50%);
-    background: -o-linear-gradient(top right, #6026aa 50%, #f91e37 50%);
-    background: linear-gradient(to bottom left, #6026aa 50%, #f91e37 50%);
+    background: $red;
+    background: -webkit-linear-gradient(top right, $purple 50%, $red 50%);
+    background: -moz-linear-gradient(top right, $purple 50%, $red 50%);
+    background: -o-linear-gradient(top right, $purple 50%, $red 50%);
+    background: linear-gradient(to bottom left, $purple 50%, $red 50%);
 }
 .wrapper{
     max-width: 1320px;
@@ -58,7 +62,7 @@ body{
        
 
         .logotype{
-            fill: #FFF;
+            fill: white;
             margin-left: 8px;
         }
     }
@@ -67,7 +71,7 @@ body{
 
 @media screen and (max-width: 960px){
     .purple.head {
-        background: #542197;
+        background: $dark-purple;
         text-align: center;
     }
 

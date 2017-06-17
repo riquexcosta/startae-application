@@ -1,3 +1,5 @@
+@import '../../../assets/styles/_variables.scss';
+
 .purple{
     padding: 20px;
     min-height: 100vh;
@@ -25,12 +27,12 @@
             font-size: 20px;
             display: block;
             border: none;
-            font-family: "ProximaNovaBold";
+            font-family: $bold;
         }
 
     }
     a.back{
         color: white;
-        font-family: "ProximaNovaBold";
+        font-family: $bold;
     }
 }

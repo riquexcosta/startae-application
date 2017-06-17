@@ -1,3 +1,5 @@
+@import '../../assets/styles/_variables.scss';
+
 .purple{
     padding: 30px;
     min-height: 100vh;
@@ -5,9 +7,9 @@
 
 table{
     background: white;
-    color: #6026aa;
+    color: $purple;
     thead{
-        background: #6026aa;
+        background: $purple;
         color: white;
 
         tr th{
@@ -57,11 +59,11 @@ a.new, a.back{
     padding: 5px 20px;
     text-decoration: none;
     margin: 10px 0px;
-    font-family: "ProximaNovaBold";
+    font-family: $bold;
 }
 
 a.back{
     background: white;
-    color: #6026aa;
+    color: $purple;
     text-align: center;
 }

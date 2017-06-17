@@ -1,9 +1,12 @@
+@import '../../../assets/styles/_variables.scss';
+
+
 .purple{
     padding-top: 140px;
 
     h1{
         font-size: 100px;
-        font-family: "ProximaNovaBold";
+        font-family: $bold;
         text-align: center;
         margin-bottom: 10px
     }
@@ -11,7 +14,7 @@
     p.ocupation{
         font-size: 20px;
         text-align: center;
-        font-family: "ProximaNovaLight";
+        font-family: $light;
         letter-spacing: 1px;
     }
 
@@ -19,7 +22,7 @@
         text-align: center;
         font-size: 18px;
         letter-spacing: 1px;
-        font-family: "ProximaNovaLight";
+        font-family: $light;
     }
 }
 
@@ -77,7 +80,7 @@
         .like{
             text-align: left;
             font-size: 14px;
-            font-family: "ProximaNovaBold";
+            font-family: $bold;
             color: #9dafbb;
             padding-top: 5px;
 
@@ -103,13 +106,13 @@
         width: 340px;
 
         p{
-            font-family: "ProximaNovaRegularItalic";
+            font-family: $italic;
             color: #797979;
             margin: 0;
             &.date{
                 color: #000;
                 font-size: 13px;
-                font-family: "ProximaNovaBold";
+                font-family: $bold;
                 margin-bottom: 5px;
                 margin-top: 10px;
             }
@@ -134,7 +137,7 @@
         width: 7px;
         height: 7px; 
         border-radius: 100px;
-        border: 5px solid #f91e37;
+        border: 5px solid $red;
         position: absolute;
         right: -30px;
         top: 50%;
